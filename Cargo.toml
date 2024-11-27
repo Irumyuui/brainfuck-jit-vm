@@ -1,0 +1,19 @@
+[package]
+name = "bf"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bfjit"
+path = "src/bin/bfjit.rs"
+
+[[bin]]
+name = "bfrepl"
+path = "src/bin/bfrepl.rs"
+
+[dependencies]
+anyhow = { version = "1.0.93", features = ["backtrace"] }
+clap = { version = "4.5.21", features = ["derive"] }
+dynasm = "3.0.1"
+dynasmrt = "3.0.1"
+thiserror = "2.0.3"
